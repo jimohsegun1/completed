@@ -1,10 +1,9 @@
 import React from "react";
 import Sidebar from "./components/Sidebar";
 import DashboardCards from "./components/DashboardCards";
-import DashboardCharts from "./components/DashBoardCharts";
 import CustomersSection from "./components/CustomersSection";
 import Menu from "./components/Menu";
-import TopBar from "./components/Topbar";
+import TopBar from "./components/TopBar";
 import DashBoardCharts from "./components/DashBoardCharts";
 
 const App = () => {
