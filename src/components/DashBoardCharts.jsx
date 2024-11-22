@@ -23,7 +23,7 @@ const chartConfig = {
   expance: { label: "Expance", color: "#FF4CE2" },
 };
 
-const DashboardCharts = () => {
+const DashBoardCharts = () => {
   const [menuOpen, setMenuOpen] = useState(false); // revenue state
   const [customersMenuOpen, setCustomersMenuOpen] = useState(false); // State for Customers menu
 
@@ -280,4 +280,4 @@ const DashboardCharts = () => {
   );
 };
 
-export default DashboardCharts;
+export default DashBoardCharts;

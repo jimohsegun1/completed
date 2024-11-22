@@ -3,7 +3,7 @@ import { FaSearch } from "react-icons/fa";
 import { HiOutlineBell } from "react-icons/hi";
 import { HiOutlineEnvelope } from "react-icons/hi2";
 
-const Topbar = () => {
+const TopBar = () => {
   return (
     <div className="w-full h-20 bg-white flex items-center justify-between px-6 shadow-sm border-b border-gray-200">
       {/* Left Section */}
@@ -54,4 +54,4 @@ const Topbar = () => {
   );
 };
 
-export default Topbar;
+export default TopBar;
