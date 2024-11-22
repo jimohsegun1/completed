@@ -20,12 +20,12 @@ const markerIcon = new L.Icon({
 
 const CustomerMap = () => {
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 h-96">
+    <div className="bg-white shadow-lg rounded-xl p-6 h-full">
       <h2 className="text-lg font-semibold text-gray-700 mb-4">Customer Map</h2>
       <MapContainer
         center={[37.7749, -122.4194]}
         zoom={10}
-        style={{ height: "80%", borderRadius: "10px" }}
+        style={{ height: "90%", borderRadius: "10px" }}
         className="customer-map"
       >
         <TileLayer

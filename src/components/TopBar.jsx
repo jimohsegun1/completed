@@ -7,15 +7,16 @@ const TopBar = () => {
   return (
     <div className="w-full h-20 bg-white flex items-center justify-between px-6 shadow-sm border-b border-gray-200">
       {/* Left Section */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-4">
         <div>
-          <h1 className="text-xl font-semibold text-gray-800">Hi, Taylor!</h1>
-          <p className="text-sm text-gray-500">Let's check your store today</p>
+          <h1 className="text-lg sm:text-xl font-semibold text-gray-800">Hi, Taylor!</h1>
+          <p className="text-sm sm:text-base text-gray-500">Let's check your store today</p>
         </div>
       </div>
 
       {/* Right Section */}
       <div className="flex items-center space-x-4 sm:space-x-6">
+        {/* Search Bar (Hidden on Small Screens) */}
         <div className="relative hidden sm:block">
           <FaSearch className="absolute left-3 top-2.5 text-gray-400" />
           <input
@@ -25,6 +26,7 @@ const TopBar = () => {
           />
         </div>
 
+        {/* Messages Icon */}
         <div className="relative">
           <HiOutlineEnvelope className="text-gray-500 text-lg cursor-pointer hover:text-purple-500" />
           <span className="absolute -top-1 -right-2 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
@@ -32,6 +34,7 @@ const TopBar = () => {
           </span>
         </div>
 
+        {/* Notifications Icon */}
         <div className="relative">
           <HiOutlineBell className="text-gray-500 text-lg cursor-pointer hover:text-purple-500" />
           <span className="absolute -top-1 -right-2 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
@@ -39,7 +42,8 @@ const TopBar = () => {
           </span>
         </div>
 
-        <div className="flex items-center space-x-2">
+        {/* Profile */}
+        <div className="flex items-center space-x-2 sm:space-x-4">
           <img
             src="images/profileImg.png"
             alt="Profile"

@@ -60,11 +60,11 @@ const Menu = () => {
   return (
     <div className="p-4 sm:p-6 bg-white rounded-lg shadow-lg">
       {/* Header */}
-      <div className="flex flex-col md:flex-row justify-between items-center mb-6 space-y-4 md:space-y-0">
-        <h2 className="text-xl md:text-2xl font-bold text-center md:text-left">
+      <div className="flex flex-col sm:flex-row justify-between items-center mb-6 space-y-4 sm:space-y-0">
+        <h2 className="text-xl sm:text-2xl font-bold text-center sm:text-left">
           Menu
         </h2>
-        <div className="flex flex-wrap justify-center md:justify-start space-x-4 text-gray-600">
+        <div className="flex flex-wrap justify-center sm:justify-start space-x-4 text-gray-600">
           {["All Category", "Breakfast", "Lunch", "Dinner"].map((category) => (
             <button
               key={category}
@@ -82,15 +82,15 @@ const Menu = () => {
       </div>
 
       {/* Top Section: Two Larger Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-6">
         {filterMenuItems()
           .slice(0, 2)
           .map((item, index) => (
             <div
               key={index}
-              className={`${
-                index === 0 ? "md:col-span-2" : "md:col-span-1"
-              } relative rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow`}
+              className={`relative rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow ${
+                index === 0 ? "sm:col-span-2" : "sm:col-span-1"
+              }`}
             >
               <img
                 src={item.image}
