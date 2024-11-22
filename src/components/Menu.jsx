@@ -88,7 +88,7 @@ const Menu = () => {
           .map((item, index) => (
             <div
               key={index}
-              className={`relative rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow ${
+              className={`relative group rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow ${
                 index === 0 ? "sm:col-span-2" : "sm:col-span-1"
               }`}
             >
@@ -98,7 +98,7 @@ const Menu = () => {
                 className="w-full h-40 sm:h-48 md:h-56 object-cover"
               />
               {/* Frosted Glass Overlay */}
-              <div className="absolute inset-x-0 bottom-4 mx-4 w-auto rounded bg-white/50 backdrop-blur-sm border border-white/30 p-3 sm:p-4">
+              <div className="absolute inset-x-0 bottom-4 mx-4 w-auto rounded bg-white/50 backdrop-blur-sm border border-white/30 p-3 sm:p-4 opacity-100 group-hover:opacity-90 group-hover:backdrop-blur-md transition-all duration-300">
                 <div className="flex justify-between items-center gap-x-2">
                   <div className="w-2/3 truncate">
                     <h3 className="text-sm sm:text-base md:text-lg font-semibold text-gray-800 truncate">
@@ -126,7 +126,7 @@ const Menu = () => {
           .map((item, index) => (
             <div
               key={index}
-              className="relative rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+              className="relative group rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
             >
               <img
                 src={item.image}
@@ -134,7 +134,7 @@ const Menu = () => {
                 className="w-full h-32 sm:h-40 object-cover"
               />
               {/* Frosted Glass Overlay */}
-              <div className="absolute inset-x-0 bottom-4 mx-4 w-auto rounded bg-white/50 backdrop-blur-sm border border-white/30 p-3 sm:p-4">
+              <div className="absolute inset-x-0 bottom-4 mx-4 w-auto rounded bg-white/50 backdrop-blur-sm border border-white/30 p-3 sm:p-4 opacity-100 group-hover:opacity-90 group-hover:backdrop-blur-md transition-all duration-300">
                 <div className="flex justify-between items-center gap-x-2">
                   <div className="w-2/3 truncate">
                     <h3 className="text-sm sm:text-base md:text-lg font-semibold text-gray-800 truncate">
