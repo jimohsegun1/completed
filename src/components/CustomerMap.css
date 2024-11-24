@@ -1,4 +1,4 @@
-.customer-map {
+/* .customer-map {
     border-radius: 10px;
     overflow: hidden;
   }
@@ -6,4 +6,16 @@
   .leaflet-container {
     background: #f8f9fa;
   }
-  
+   */
+
+   .customer-map {
+  height: 60%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+  .customer-map {
+    height: 50vh; /* Full height for small screens */
+  }
+}

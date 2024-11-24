@@ -20,29 +20,30 @@ const markerIcon = new L.Icon({
 
 const CustomerMap = () => {
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 h-full">
+    <div className="bg-white shadow-lg rounded-xl p-6 sm:h-[70%] h-[65%]">
       <h2 className="text-lg font-semibold text-gray-700 mb-4">Customer Map</h2>
-      <MapContainer
-        center={[37.7749, -122.4194]}
-        zoom={10}
-        style={{ height: "90%", borderRadius: "10px" }}
-        className="customer-map"
-      >
-        <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        />
-        
-        {customers.map((customer) => (
-          <Marker key={customer.id} position={customer.position} icon={markerIcon}>
-            <Popup>
-              <strong>{customer.name}</strong>
-              <br />
-              {customer.count} Customers
-            </Popup>
-          </Marker>
-        ))}
-      </MapContainer>
+      <div className="h-[calc(100%-2rem)] sm:h-screen rounded-lg">
+        <MapContainer
+          center={[37.7749, -122.4194]}
+          zoom={10}
+          className="customer-map"
+        >
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          />
+          
+          {customers.map((customer) => (
+            <Marker key={customer.id} position={customer.position} icon={markerIcon}>
+              <Popup>
+                <strong>{customer.name}</strong>
+                <br />
+                {customer.count} Customers
+              </Popup>
+            </Marker>
+          ))}
+        </MapContainer>
+      </div>
     </div>
   );
 };
