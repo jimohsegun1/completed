@@ -8,7 +8,6 @@ This is a React-based dashboard application, designed to provide a comprehensive
 
 * **Customer Management:** 
     * Create, read, update, and delete customer records.
-    * Filter and search customers based on various criteria.
 * **Dashboard:** 
     * Visualize key metrics like total orders, revenue, and customer count.
     * Display data in various chart formats (e.g., bar charts, pie charts).
