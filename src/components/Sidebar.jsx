@@ -8,7 +8,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="w-full sm:w-64 sm:h-auto h-screen bg-white shadow-lg flex flex-col">
+    <div className="hidden sm:block w-full sm:w-64 sm:h-auto h-screen bg-white shadow-lg flex flex-col">
       <div className="flex items-center px-6 py-4">
         <div className="w-10 h-10 bg-purple-700 rounded-full flex items-center justify-center text-white text-lg font-bold">
           <img src="images/logoframe.png" alt="" />
@@ -23,7 +23,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      {/* Navigatn Menu */}
+      {/* Navigation Menu */}
       <nav className="flex-1 mt-6 px-4">
         <ul className="space-y-4">
           <li>
